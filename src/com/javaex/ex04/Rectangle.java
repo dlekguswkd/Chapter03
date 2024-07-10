@@ -1,4 +1,4 @@
-package com.javaex.ex03;
+package com.javaex.ex04;
 
 public class Rectangle {
 	
@@ -34,12 +34,11 @@ public class Rectangle {
 	
 	@Override
 	public boolean equals(Object obj) {
-		
 		Rectangle r=(Rectangle)obj;
 		
 		boolean result;
 		
-		if(this.width == r.width && this.height == r.height) {
+		if(this.width*this.height == r.width*r.height) {
 			result=true;
 			//return true;
 		}else {
@@ -47,7 +46,8 @@ public class Rectangle {
 			//return false;
 		}
 		return result;
-	}
+	
+}
 	
 	
 
